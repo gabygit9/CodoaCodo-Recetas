@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@500&family=PT+Sans+Narrow&family=Ubuntu&display=swap');
+
+:root{
+    --background-orange:#ff8552;
+    --background-darkgreen:#1a4343;
+    --background-grey:#e6e6e6;
+    --background-aqua:#297373;
+}
+body{
+    width: 98.7vw;
+    max-height: 100vh;;
+    background-color: var(--background-grey);
+    margin: auto; 
+}
+.caja-mixta{
+    position: relative;
+    top: -50%;
+    width: 70%;
+    height: 300px;
+    margin-left: 13%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-orange);
+}
+.medio-titulo{
+    display: flex;
+    width: 50%;
+    justify-content: start;
+    padding: 80px 0px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 45px;
+    margin: 0px 45px;
+    color: var(--background-darkgreen);
+}
+.medio-parrafo{
+    display: flex;
+    padding-left: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+    margin: 10px;
+    color: var(--background-darkgreen);
+}
+.imagenes-individuales{
+    width: 451px;
+    height: 300px;
+    position: relative;
+    left: 53%;
+    top: -72.9%;
+    display: block;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+}
+table{
+    border: var(--background-aqua) solid 1px;
+    margin: 80px 0px 0px 50px;
+    padding: 10px;
+    width: 45%;
+}
+.titulo-secundario{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    color: var(--background-darkgreen);
+    display: flex;
+    margin-bottom: 20px;
+}
+td{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    color: var(--background-aqua);
+    border-bottom: 1px solid #c8cbcb;
+    padding: 12px;
+}
+.subtitulo{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--background-darkgreen);
+    border-bottom: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+}
+tr td:last-child{
+    text-align: right;
+}
+.footer-table{
+    border-bottom: none;
+    margin-top: 0px;
+}
+.preparacion{
+    margin: 60px;
+}
+.texto-listas li{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: var(--background-aqua);
+    margin-left: -4%;
+    padding: 8px;
+}
+.video{
+    padding: 5%;
+}
+iframe{
+    position: relative;
+    width: 80%;
+    height: 400px;
+    left: 10%;
+}
+@media screen and (max-width:768px) {
+    body{
+        width: 60vw;
+        margin: 0px;
+    }
+    .caja-mixta{
+        top: 40px;
+        left: 10%;
+        height: 18vh;
+        width: 85%;
+        margin: 0px;
+    }
+    .medio-titulo{
+        padding: 28px 0px 0px;
+        margin-bottom: 20px;
+        font-size: 3vh;
+        width: 100%;
+        justify-content: start;
+    }
+    .imagenes-individuales{
+        position: relative;
+        width: 70%;
+        height:100%;
+        left: 100%;
+        top: -170px;
+    }
+    .contenedor{
+        flex-direction: column;
+        margin-left: 22%;
+        position: relative;
+        top: 13vh;
+    }
+    table{
+        margin: 0px auto;
+        width: 150%;
+    }
+    .titulo-secundario{
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+    td{
+        font-size: 15px;
+        padding: 6px;
+    }
+    .subtitulo{
+        font-size: 17px;
+    }
+    .preparacion{
+        margin: 0px;
+        width: 150%;
+    }
+    .texto-listas li{
+        padding: 4px;
+    }
+    .video{
+        width: 130%;
+        bottom: -15vh;
+        position: relative;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+}

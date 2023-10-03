@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@500&family=PT+Sans+Narrow&family=Ubuntu&display=swap');
+:root{
+    --background-orange:#ff8552;
+    --background-darkgreen:#1a4343;
+    --background-grey:#e6e6e6;
+    --background-aqua:#297373;
+}
+body{
+    max-width: 99vw;
+    max-height: 100vh;;
+    background-color: var(--background-grey);
+    margin: auto; 
+    box-sizing: border-box;
+}
+.caja{
+    max-width: 100%;
+    height: 130px;
+    background-color: var(--background-aqua);
+    position: relative;
+    top: -40px;
+}
+.titulo{
+    text-align: center;
+    font-size: 50px;
+    font-family:'Ubuntu', sans-serif;
+    color: var(--background-grey);
+    position: relative;
+    top: 40%;
+}
+.foto{
+    width: 100%;
+    height: 300px;
+}
+.description{
+    position: relative;
+    top: -7%;
+    font-size: 25px;
+    font-family:'Nunito', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: #39393a;
+    cursor: pointer;
+    transition: font-size 1s, color 0.3s;
+}
+.description:hover{
+    color: var(--background-aqua);
+    font-size: 29px;
+}
+.orange{
+    background-color: var(--background-orange);
+}
+.pie-pagina{
+    position: absolute;
+    background-color: var(--background-aqua);
+    width: 100%;
+    height: 25%;
+    bottom: -95%;
+}
+.contacto a{
+    position: relative;
+    bottom: -55px;
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: var(--background-grey);
+    transition: font-size 1s, color 0.3s;
+}
+.contacto a:hover{
+    color: var(--background-orange);
+    font-size: 44px;
+}
+
+@media screen and (max-width: 768px)  {
+    .caja{
+        width: 100%;
+    }
+    .titulo{
+        font-size: 40px;
+    }
+    .container{
+        max-width: 100%;
+    }
+    .col{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .pie-pagina{
+        position: relative;
+        height: 14%;
+        bottom: -25%;
+    } 
+    .contacto{
+        position: relative;
+        top: -54px;
+        font-size: 30px;
+    }
+}
+
+    

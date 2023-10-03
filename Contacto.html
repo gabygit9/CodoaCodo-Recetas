@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="contacto.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <main>
+      <form>
+          <div class="campo">
+              <label for="nombre">Nombre:</label>
+              <input type="text" required name="nombre" />
+          </div>
+          <div class="campo">
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" />
+          </div>
+          <div class="campo">
+            <label for="provincia">Provincia</label>
+            <select required name="provincia" id="provincia">
+              <option value="">Seleccionar</option>
+              <option value="">Buenos Aires</option>
+              <option value="">Catamarca</option>
+              <option value="">Chaco</option>
+              <option value="">Chubut</option>
+              <option value="">Córdoba</option>
+              <option value="">Corrientes</option>
+              <option value="">Entre Ríos</option>
+              <option value="">Formosa</option>
+              <option value="">Jujuy</option>
+              <option value="">La Pampa</option>
+              <option value="">La Rioja</option>
+              <option value="">Mendoza</option>
+              <option value="">Misiones</option>
+              <option value="">Neuquén</option>
+              <option value="">Río Negro</option>
+              <option value="">Salta</option>
+              <option value="">San Juan</option>
+              <option value="">San Luis</option>
+              <option value="">Santa Cruz</option>
+              <option value="">Santa Fe</option>
+              <option value="">Santiago del Estero</option>
+              <option value="">Tierra del Fuego</option>
+              <option value="">Tucumán</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" name="telefono" />
+          </div>
+          <div class="campo">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" />
+          </div>
+          <div class="campo">
+            <label for="consulta">Tipo de Cosulta</label>
+            <select required name="consulta">
+              <option value="">Suscripción</option>
+              <option value="">Comprar E-Book</option>
+              <option value="">Contratar nuestros servicios</option>
+              <option value="">Otros</option>
+            </select>
+          </div>
+         <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea for="mensaje"></textarea>
+         </div>
+         <div class="campo">
+            <input type="radio" name="agree" />
+            <label for="agree"
+              >Estoy de acuerdo con los términos y condiciones.</label>
+         </div>
+         <div class="campo">
+            <div class="general"><input type="submit" /></div>
+      </form>
+    </main>
+  </body>
+</html>
